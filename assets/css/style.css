@@ -171,6 +171,7 @@ form input {
     text-align: left;
     padding: 10px;
 }
+
 #newsletter h2, #special-h2 {
     text-align: center;
     font-size: 30px;
@@ -180,4 +181,28 @@ form input {
 aside a {
     color: #009ddb;
 }
+.related {
+    line-height: 40px;
+}
+.date {
+    font-size: 15px;
+    padding-left: 210px;
+}
 /* FOOTER */
+footer {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    background: #013b33;
+    background: linear-gradient(0deg,rgba(1, 59, 51, 1) 35%, rgba(2, 148, 171, 1) 100%);
+    width: 80%;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+footer a {
+    color: purple;
+}
