@@ -192,8 +192,9 @@ aside a {
 footer {
     font-size: 20px;
     letter-spacing: 1px;
-    text-align: center;
+    line-height: 25px;
     color: white;
+    text-align: center;
     background: #013b33;
     background: linear-gradient(0deg,rgba(1, 59, 51, 1) 35%, rgba(2, 148, 171, 1) 100%);
     width: 80%;
@@ -204,5 +205,8 @@ footer {
     box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
 }
 footer a {
-    color: purple;
+    color: rgb(252, 4, 252);
+}
+#special-f {
+    margin-bottom: 20px;
 }
