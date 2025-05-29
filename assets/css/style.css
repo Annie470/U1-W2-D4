@@ -77,7 +77,28 @@ main {
 article p {
     margin-bottom: 20px;
     line-height: 25px;
-    
+    font-weight: 400;
+}
+article p b{
+    color: blueviolet;
+}
+article ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+article li {
+    line-height: 30px;
+}
+li span {
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: #f3f3f3;
+}
+article ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    margin-bottom: 20px;
 }
 
 /* TABELLE */
