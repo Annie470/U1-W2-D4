@@ -46,26 +46,63 @@ const crazyDiff = function (n1) {
 console.log(crazyDiff(23));
 
 /* ESERCIZIO 4
- Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
+ Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, 
+ e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if (n >= 20 && n <= 100) {
+    return true;
+  } else if (n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(boundary(404));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
- La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
+ La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita,
+  ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function (stringa) {
+  if (stringa.startsWith("EPICODE")) {
+    // oppure si poteva trasformare la stringa in un array di paroline e confrontare il primo elemento...etc
+    return stringa;
+  } else {
+    let stringaEpica = "EPICODE " + stringa;
+    return stringaEpica;
+  }
+};
+console.log(epify("Gianfrancioschio"));
 
 /* ESERCIZIO 6
- Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
+ Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. 
+ La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const check3and7 = function (n) {
+  if (n > 0) {
+    if (n % 3 === 0 || n % 7 === 0) {
+      console.log("Il numero fornito è un multiplo di 3 o 7");
+    } else {
+      console.log(
+        "Mi spiaze ma non è un multiplino di 3 o 7! Ritenta sarai piu fortunato.."
+      );
+    }
+  } else {
+    console.log(
+      "Il numero inserito non è valido, inserisci solo n positivi o maggiori di 0"
+    );
+  }
+};
+console.log(check3and7(9));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
