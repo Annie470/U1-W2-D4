@@ -86,7 +86,6 @@ console.log(epify("Gianfrancioschio"));
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 const check3and7 = function (n) {
   if (n > 0) {
     if (n % 3 === 0 || n % 7 === 0) {
@@ -105,10 +104,20 @@ const check3and7 = function (n) {
 console.log(check3and7(9));
 
 /* ESERCIZIO 7
- Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
+ Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa 
+ fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const reverseString = function (stringa) {
+  let stringaConfusa = stringa.split("").reverse().join("");
+  return stringaConfusa;
+  //SPIEGAZIONE PASSAGGI
+  //   let stringaConfusa = stringa.split("");
+  //   stringaConfusa = stringaConfusa.reverse();
+  //   stringaNonPiuConfusa = stringaConfusa.join("");
+  //   return stringaNonPiuConfusa;
+};
+console.log(reverseString("EPICODE"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
