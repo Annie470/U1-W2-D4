@@ -28,11 +28,22 @@ const crazySum = function (n1, n2) {
 console.log(crazySum(4, 5));
 
 /* ESERCIZIO 3
- Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
- Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
+ Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta 
+ tra un numero fornito come parametro e 19.
+ Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora
+  il numero fornito sia maggiore di 19.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (n1) {
+  if (n1 < 19) {
+    let diffAssoluta = 19 - n1;
+    return diffAssoluta;
+  } else {
+    let diffAssolutaEPazzerella = (n1 - 19) * 3; //ma perchè per tre sempre?  Sarà un numero magico?
+    return diffAssolutaEPazzerella;
+  }
+};
+console.log(crazyDiff(23));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
