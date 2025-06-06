@@ -120,21 +120,51 @@ const reverseString = function (stringa) {
 console.log(reverseString("EPICODE"));
 
 /* ESERCIZIO 8
- Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
- La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
+ Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa 
+ formata da diverse parole.
+ La funzione deve rendere maiuscola la prima lettera di ogni parola
+  contenuta nella stringa.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const upperFirst = function (stringa) {
+  const stringaInArray = stringa.split(" ");
+  const arr = [];
+  for (let i = 0; i < stringaInArray.length; i++) {
+    let parola = stringaInArray[i];
+    parola = parola.charAt(0).toUpperCase() + parola.slice(1);
+    arr.push(parola);
+  }
+  return arr.join(" ");
+  /*return stringa.replace(/\b\w/g, lettera => lettera.toUpperCase()); GRAZIE GOOGLE
+  \b è l'inizio di una parola -.- molto più semplice
+  \w indica caratteri alfanmerici
+  /g agisce su tutta la stringa*/
+};
+console.log(upperFirst("ciao mondo!"));
 
 /* ESERCIZIO 9
- Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
+ Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. 
+ La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const cutString = function (stringa) {
+  let nuovaStringa = stringa.slice(1, stringa.length);
+  return nuovaStringa;
+};
+console.log(cutString("Fantasmagorico"));
 
 /* ESERCIZIO 10
- Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
+ Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n 
+ e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n) {
+  let arrayDiNumeri = [];
+  for (let i = 0; i < n; i++) {
+    let num = Math.ceil(Math.random() * 10);
+    arrayDiNumeri.push(num);
+  }
+  return arrayDiNumeri;
+};
+console.log(giveMeRandom(6));
